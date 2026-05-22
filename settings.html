@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки - Habit Tracker</title>
+    <link rel="stylesheet" href="settings.css">
+    <style>.nav-item { text-decoration: none; color: inherit; } .btn-cancel { text-decoration: none; text-align: center; display: block; width: 100%; }</style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo"><span class="clover">✿</span><span>Habit</span></div>
+        <a href="index.html" class="nav-item"><span class="icon"></span><span>Главная</span></a>
+        <a href="calendar.html" class="nav-item"><span class="icon"></span><span>Календарь</span></a>
+        <a href="statistics.html" class="nav-item"><span class="icon"></span><span>Статистика</span></a>
+        <a href="settings.html" class="nav-item active"><span class="icon"></span><span>Настройки</span></a>
+        <div class="profile-card">
+            <div class="avatar"></div>
+            <div><div class="name">Имя</div><div class="email">почта@gmail.com</div></div>
+        </div>
+    </aside>
+
+    <main class="main">
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h1 class="page-title">Настройки</h1>
+                <button class="btn-danger">Удалить аккаунт</button>
+            </div>
+            <div class="settings-section">
+                <h2 class="section-title">Профиль</h2>
+                <div class="section-divider"></div>
+                <div class="avatar-upload">
+                    <div class="avatar-preview"></div>
+                    <div class="upload-info">
+                        <div class="upload-title">Загрузить аватар</div>
+                        <div class="upload-format">JPG, PNG или GIF. Макс. 2 Мб.</div>
+                        <label class="file-upload-btn">Выбрать файл<input type="file" accept=".jpg,.jpeg,.png,.gif" hidden></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="display-name" class="form-label">Отображаемое имя</label>
+                    <input type="text" id="display-name" class="form-input" placeholder="Введите ваше имя">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" value="почта@gmail.com" readonly>
+                    <div class="form-hint">Email нельзя изменить самостоятельно</div>
+                </div>
+                <button class="btn-primary">Сохранить изменения</button>
+            </div>
+            <div class="settings-section security-section">
+                <h2 class="section-title">Безопасность</h2>
+                <div class="section-divider"></div>
+                <div class="form-group">
+                    <label for="current-password" class="form-label">Текущий пароль</label>
+                    <input type="password" id="current-password" class="form-input" placeholder="Введите текущий пароль">
+                </div>
+                <div class="form-group">
+                    <label for="new-password" class="form-label">Новый пароль</label>
+                    <input type="password" id="new-password" class="form-input" placeholder="Введите новый пароль">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password" class="form-label">Подтвердите новый пароль</label>
+                    <input type="password" id="confirm-password" class="form-input" placeholder="Повторите новый пароль">
+                </div>
+                <button class="btn-primary">Обновить пароль</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

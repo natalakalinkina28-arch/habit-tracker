@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <style>.nav-item { text-decoration: none; color: inherit; }</style>
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">
+            <span class="clover">✿</span>
+            <span>Habit</span>
+        </div>
+
+        <a href="index.html" class="nav-item active">
+            <span class="icon"></span>
+            <span>Главная</span>
+        </a>
+        <a href="calendar.html" class="nav-item">
+            <span class="icon"></span>
+            <span>Календарь</span>
+        </a>
+        <a href="statistics.html" class="nav-item">
+            <span class="icon"></span>
+            <span>Статистика</span>
+        </a>
+    
+        <a href="settings.html" class="nav-item">
+            <span class="icon"></span>
+            <span>Настройки</span>
+        </a>
+
+        <div class="profile-card">
+            <div class="avatar"></div>
+            <div>
+                <div class="name">Имя</div>
+                <div class="email">почта@gmail.com</div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+        <div class="top-bar">
+            <div class="greeting">
+                <h1>Привет, (имя)</h1>
+                <p>Готовы к новым победам?</p>
+            </div>
+            <div class="top-buttons">
+                <button class="top-btn">🔔 Уведомления</button>
+                <a href="new-habit.html" class="top-btn" style="text-decoration: none; color: #333;">+ Добавить привычку</a>
+            </div>
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-label">Прогресс сегодня</span>
+                    <div class="stat-icon bar-chart">📊</div>
+                </div>
+                <div class="stat-value">0/5</div>
+                <div class="progress-bar"><div class="fill purple" style="width: 0%"></div></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-label">Текущая серия</span>
+                    <div class="stat-icon fire">🔥</div>
+                </div>
+                <div class="stat-value">0 дней</div>
+                <div class="progress-bar"><div class="fill orange" style="width: 0%"></div></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-label">Всего выполнено</span>
+                    <div class="stat-icon check">✅</div>
+                </div>
+                <div class="stat-value">0</div>
+                <div class="progress-bar"><div class="fill green" style="width: 0%"></div></div>
+            </div>
+        </div>
+
+        <div class="habits-section">
+            <div class="habits-header">
+                <h2>Привычки на сегодня</h2>
+                <button class="show-all-btn">Показать все</button>
+            </div>
+
+            <div class="habit-item">
+                <div class="habit-checkbox"></div>
+                <div class="habit-info">
+                    <div class="habit-name">Утренняя йога</div>
+                    <div class="habit-schedule">15 минут/ Ежедневно</div>
+                </div>
+                <div class="habit-tags">
+                    <span class="habit-tag">Спорт</span>
+                    <span class="habit-fire"><span class="flame">🔥</span><span class="count">0</span></span>
+                </div>
+            </div>
+
+            <div class="habit-item">
+                <div class="habit-checkbox"></div>
+                <div class="habit-info">
+                    <div class="habit-name">Выпить 2л воды</div>
+                    <div class="habit-schedule">В течении дня</div>
+                </div>
+                <div class="habit-tags">
+                    <span class="habit-tag">Здоровье</span>
+                    <span class="habit-fire"><span class="flame">🔥</span><span class="count">0</span></span>
+                </div>
+            </div>
+
+            <div class="habit-item">
+                <div class="habit-checkbox"></div>
+                <div class="habit-info">
+                    <div class="habit-name">Чтение книг</div>
+                    <div class="habit-schedule">30 минут/ Ежедневно</div>
+                </div>
+                <div class="habit-tags">
+                    <span class="habit-tag">Обучение</span>
+                    <span class="habit-fire"><span class="flame">🔥</span><span class="count">0</span></span>
+                </div>
+            </div>
+
+            <div class="habit-item">
+                <div class="habit-checkbox"></div>
+                <div class="habit-info">
+                    <div class="habit-name">Пробежка</div>
+                    <div class="habit-schedule">3 км/ 3 раза в неделю</div>
+                </div>
+                <div class="habit-tags">
+                    <span class="habit-tag">Спорт</span>
+                    <span class="habit-fire"><span class="flame">🔥</span><span class="count">0</span></span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

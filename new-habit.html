@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая привычка - Habit Tracker</title>
+    <link rel="stylesheet" href="new-habit.css">
+    <style>.nav-item { text-decoration: none; color: inherit; } .btn-cancel { text-decoration: none; text-align: center; display: block; width: 100%; }</style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo"><span class="clover">✿</span><span>Habit</span></div>
+        <a href="index.html" class="nav-item"><span class="icon"></span><span>Главная</span></a>
+        <a href="calendar.html" class="nav-item"><span class="icon"></span><span>Календарь</span></a>
+        <a href="statistics.html" class="nav-item"><span class="icon"></span><span>Статистика</span></a>
+        <a href="settings.html" class="nav-item"><span class="icon"></span><span>Настройки</span></a>
+        <div class="profile-card">
+            <div class="avatar"></div>
+            <div><div class="name">Имя</div><div class="email">почта@gmail.com</div></div>
+        </div>
+    </aside>
+
+    <main class="main">
+        <div class="content-wrapper">
+            <h1 class="page-title">Новая привычка</h1>
+            <form class="habit-form">
+                <div class="form-group">
+                    <div class="form-label-row"><label for="habit-name">Название</label><span class="char-counter">0/50</span></div>
+                    <input type="text" id="habit-name" class="form-input" maxlength="50" placeholder="Введите название привычки">
+                </div>
+                <div class="form-group">
+                    <div class="form-label-row"><label for="habit-description">Описание</label><span class="char-counter">0/200</span></div>
+                    <textarea id="habit-description" class="form-textarea" maxlength="200" rows="4" placeholder="Опишите вашу привычку"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="habit-category">Категория</label>
+                        <select id="habit-category" class="form-select">
+                            <option value="">Выберите категорию</option>
+                            <option value="sport">Спорт</option>
+                            <option value="health">Здоровье</option>
+                            <option value="learning">Обучение</option>
+                            <option value="work">Работа</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="habit-frequency">Частота выполнения</label>
+                        <select id="habit-frequency" class="form-select">
+                            <option value="">Выберите частоту</option>
+                            <option value="daily">Ежедневно</option>
+                            <option value="weekly">Еженедельно</option>
+                            <option value="monthly">Ежемесячно</option>
+                            <option value="custom">Свой график</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="reminder-time">Время напоминания</label>
+                    <input type="time" id="reminder-time" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Цветовая метка</label>
+                    <div class="color-options">
+                        <div class="color-circle" data-color="purple" style="background: #7c6fe8;"></div>
+                        <div class="color-circle" data-color="pink" style="background: #e06fd4;"></div>
+                        <div class="color-circle" data-color="green" style="background: #8fe86f;"></div>
+                        <div class="color-circle" data-color="red" style="background: #e86f6f;"></div>
+                        <div class="color-circle" data-color="blue" style="background: #6fd4e8;"></div>
+                        <div class="color-circle" data-color="yellow" style="background: #f0e86f;"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Иконка</label>
+                    <div class="icon-options">
+                        <div class="icon-circle selected">✅</div>
+                        <div class="icon-circle">📚</div>
+                        <div class="icon-circle">🏃</div>
+                        <div class="icon-circle">📅</div>
+                        <div class="icon-circle">💻</div>
+                        <div class="icon-circle">🧘</div>
+                        <div class="icon-circle">😴</div>
+                        <div class="icon-circle">💧</div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <a href="index.html" class="btn btn-cancel">Отмена</a>
+                    <button type="submit" class="btn btn-save">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
